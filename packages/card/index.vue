@@ -10,7 +10,7 @@
   }
 </script>
 <script setup lang="ts">
-  import { CardType } from '../types/cardType'
+  import type { CardType } from './types'
   // props
   import { PropType } from 'vue'
   const props = defineProps({

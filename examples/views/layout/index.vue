@@ -1,13 +1,13 @@
 <template>
   <div class="ds-layout">
     <div class="p-side-bar">
-      <ds-side-bar
+      <!--      <ds-side-bar
         v-model:menus="menus"
         custom-class="example-side-bar"
         drawer-custom-class="example-drawer-bar"
         @handle-menu-click="handleMenuClick"
         @handle-collect="handleCollect"
-      ></ds-side-bar>
+      ></ds-side-bar>-->
     </div>
     <div class="ds-main">
       <router-view></router-view>

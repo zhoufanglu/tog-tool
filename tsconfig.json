@@ -15,11 +15,7 @@
     "types": ["vite/client"]
   },
   "include": [
-    "examples/**/*.ts",
-    "examples/**/*.d.ts",
-    "examples/**/*.tsx",
-    "examples/**/*.vue",
-    "packages/types.d.ts"
+    "packages/**/*"
   ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  //"references": [{ "path": "./tsconfig.node.json" }]
 }

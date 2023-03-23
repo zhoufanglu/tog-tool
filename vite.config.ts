@@ -2,9 +2,17 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import * as path from 'path'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
-
+import dts from 'vite-plugin-dts'
 export default defineConfig({
-  plugins: [vue(), vueSetupExtend()],
+  plugins: [
+    vue(),
+    vueSetupExtend(),
+    dts({
+      // tsConfigFilePath: './tsconfig.json', 默认选择tsconfig.
+      // entryRoot: 'packages',
+      insertTypesEntry: true
+    })
+  ],
   build: {
     outDir: 'lib',
     lib: {
